@@ -34,10 +34,17 @@ exports.tencentNlp = {
 
 ### exec(model, action, params)
 
-- model: Tencent Cloud NLP model
-- action: Tencent Cloud NLP action
-- params: Tencent Cloud NLP action params
-- return: Tencent Cloud NLP response
+> params
+
+| params |  type  |            description             |
+| ------ | ------ | ---------------------------------- |
+| model  | string | model of Tencent Cloud NLP         |
+| action | string | action of Tencent Cloud NLP        |
+| params | object | params of Tencent Cloud NLP action |
+
+> return
+
+Promise of Tencent Cloud NLP response.
 
 ### keywords(params)
 

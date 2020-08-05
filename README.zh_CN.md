@@ -34,22 +34,29 @@ exports.tencentNlp = {
 
 ### exec(model, action, params)
 
-- model: 腾讯云自然语言处理 model
-- action: 腾讯云自然语言处理 action
-- params: 腾讯云自然语言处理 action params
-- return: 腾讯云自然语言处理请求返回
+> 参数
+
+|  参数  |  类型  |               说明               |
+| ------ | ------ | -------------------------------- |
+| model  | string | 腾讯云自然语言处理model          |
+| action | string | 腾讯云自然语言处理action         |
+| params | object | 腾讯云自然语言处理action相关参数 |
+
+> 返回
+
+腾讯云自然语言处理响应（Promise格式）。
 
 ### keywords(params)
 
-即`exec('KeywordsExtractionRequest', 'KeywordsExtraction', params)`
+即`this.exec('KeywordsExtractionRequest', 'KeywordsExtraction', params)`
 
 ### summary(params)
 
-即`exec('AutoSummarizationRequest', 'AutoSummarization', params)`
+即`this.exec('AutoSummarizationRequest', 'AutoSummarization', params)`
 
 ### similar(params)
 
-即`exec('TextSimilarityRequest', 'TextSimilarity', params)`
+即`this.exec('TextSimilarityRequest', 'TextSimilarity', params)`
 
 ## 例子
 
