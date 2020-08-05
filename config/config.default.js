@@ -5,7 +5,7 @@ const tencentCloud = require('tencentcloud-sdk-nodejs');
 /**
  * egg-tencent-nlp default config
  *
- * @member Config#cos
+ * @member Config#tencentNlp
  * @property {object} tencentCloud tencentcloud-sdk-nodejs
  * @property {string} version tencent cloud nlp sdk version
  * @property {string} ReqMethod HttpProfile reqMethod
@@ -25,8 +25,8 @@ exports.tencentNlp = {
     Region: 'ap-guangzhou',
   },
   // client: {
-  //   SecretId: 'NLP_SECRETID',
-  //   SecretKey: 'NLP_SECRETKEY',
-  //   AppId: 'NLP_APPID',
+  //   SecretId: 'SECRET_ID',
+  //   SecretKey: 'SECRET_KEY',
+  //   AppId: 'APP_ID',
   // },
 };
