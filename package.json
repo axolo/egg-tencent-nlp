@@ -1,10 +1,7 @@
 {
   "name": "@axolo/egg-tencent-nlp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tencent Cloud NLP plugin for Egg.js.",
-  "eggPlugin": {
-    "name": "tencentNlp"
-  },
   "keywords": [
     "egg",
     "eggPlugin",
@@ -14,21 +11,13 @@
     "tencent nlp",
     "tencent cloud nlp"
   ],
-  "dependencies": {
-    "tencentcloud-sdk-nodejs": "^3.0.224"
-  },
-  "devDependencies": {
-    "autod": "^3.1.0",
-    "autod-egg": "^1.1.0",
-    "egg": "^2.27.0",
-    "egg-bin": "^4.15.0",
-    "egg-ci": "^1.15.0",
-    "egg-mock": "^4.0.0",
-    "eslint": "^7.6.0",
-    "eslint-config-egg": "^8.0.1"
-  },
-  "engines": {
-    "node": ">=10.0.0"
+  "files": [
+    "config",
+    "app.js",
+    "lib"
+  ],
+  "eggPlugin": {
+    "name": "tencentNlp"
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
@@ -39,11 +28,22 @@
     "pkgfiles": "egg-bin pkgfiles",
     "autod": "autod"
   },
-  "files": [
-    "config",
-    "app.js",
-    "lib"
-  ],
+  "dependencies": {
+    "tencentcloud-sdk-nodejs": "^4.0.95"
+  },
+  "devDependencies": {
+    "autod": "^3.1.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.29.3",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.18.0",
+    "egg-mock": "^4.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-egg": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "ci": {
     "version": "8, 10"
   },
