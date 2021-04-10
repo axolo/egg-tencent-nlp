@@ -12,7 +12,7 @@ npm i @axolo/egg-tencent-nlp --save
 
 ```js
 // config/plugin.js
-exports.tencentSms = {
+exports.tencentNlp = {
   enable: true,
   package: '@axolo/egg-tencent-nlp',
 };
